@@ -1,4 +1,4 @@
-package panek.szymon.ZTP.lab3.FileHandler;
+package panek.szymon.ZTP.lab3.Other;
 
 import java.io.IOException;
 import java.nio.file.Files;

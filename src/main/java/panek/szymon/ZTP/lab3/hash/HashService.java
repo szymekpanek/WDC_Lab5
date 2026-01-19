@@ -1,6 +1,6 @@
 package panek.szymon.ZTP.lab3.hash;
 
-import panek.szymon.ZTP.lab3.FileHandler.FileUtils;
+import panek.szymon.ZTP.lab3.Other.FileUtils;
 
 import java.security.MessageDigest;
 import java.util.HexFormat;

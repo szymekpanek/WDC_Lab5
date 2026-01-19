@@ -1,6 +1,6 @@
 package panek.szymon.ZTP.lab3.asymmetric;
 
-import panek.szymon.ZTP.lab3.FileHandler.FileUtils;
+import panek.szymon.ZTP.lab3.Other.FileUtils;
 
 import javax.crypto.Cipher;
 import java.security.KeyPair;

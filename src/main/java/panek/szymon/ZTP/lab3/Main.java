@@ -2,7 +2,7 @@ package panek.szymon.ZTP.lab3;
 
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import java.security.Security;
-import panek.szymon.ZTP.lab3.FileHandler.SignatureService;
+import panek.szymon.ZTP.lab3.Other.SignatureService;
 import panek.szymon.ZTP.lab3.asymmetric.AsymmetricService;
 import panek.szymon.ZTP.lab3.hash.HashService;
 import panek.szymon.ZTP.lab3.symmetric.SymmetricService;

@@ -1,6 +1,6 @@
 package panek.szymon.ZTP.lab3.symmetric;
 
-import panek.szymon.ZTP.lab3.FileHandler.FileUtils;
+import panek.szymon.ZTP.lab3.Other.FileUtils;
 
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
@@ -31,7 +31,7 @@ public class SymmetricService {
         String encryptedFile = "output_" + algorithm + ".bin";
         FileUtils.save(encryptedFile, encryptedData);
 
-        // 2. Odszyfrowanie (z pliku, który przed chwilą zapisaliśmy)
+        // 2. Odszyfrowanie (z pliku, który przed chwilą został zapisany)
         byte[] dataToDecrypt = FileUtils.read(encryptedFile);
         cipher.init(Cipher.DECRYPT_MODE, key, new IvParameterSpec(new byte[16]));
         byte[] decryptedData = cipher.doFinal(dataToDecrypt);

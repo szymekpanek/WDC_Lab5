@@ -1,4 +1,4 @@
-package panek.szymon.ZTP.lab3.FileHandler;
+package panek.szymon.ZTP.lab3.Other;
 
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
@@ -9,7 +9,7 @@ public class SignatureService {
     public void signAndVerify(String inputFile, String algorithm) throws Exception {
         System.out.println("\n--- [PODPIS] Algorytm: " + algorithm + " ---");
 
-        // Potrzebujemy kluczy RSA do podpisu
+        // Generowanie kluczy RSA do podpisu
         KeyPairGenerator kpg = KeyPairGenerator.getInstance("RSA", "BC");
         kpg.initialize(2048);
         KeyPair pair = kpg.generateKeyPair();
